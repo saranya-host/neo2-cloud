@@ -3,7 +3,7 @@ services:
     name: neo2-agent
     runtime: python
     repo: https://github.com/saranya-host/neo2-cloud  # 🔁 Replace with your repo URL
-    branch: master
+    branch: main
     plan: free  # ✅ FREE TIER
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python agent.py"
@@ -16,3 +16,4 @@ services:
         sync: false
       - key: LIVEKIT_URL
         sync: false
+
