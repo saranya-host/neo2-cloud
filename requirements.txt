@@ -5,5 +5,8 @@ livekit-agents>=1.2.2
 python-dotenv
 livekit
 livekit-plugins-noise-cancellation~=0.2
-
-
+livekit-agents
+livekit-api 
+livekit-blingfire 
+livekit-plugins-google
+livekit-protocol
