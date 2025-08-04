@@ -1,12 +1,12 @@
 services:
-  - type: web
+  - type: web  # ✅ MUST be web to avoid card requirement
     name: neo2-agent
     runtime: python
-    repo: https://github.com/saranya-host/neo2-cloud
+    repo: https://github.com/saranya-host/neo2-cloud  # 🔁 Replace with your repo URL
     branch: master
+    plan: free  # ✅ FREE TIER
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python agent.py"
-    plan: free
     envVars:
       - key: GOOGLE_API_KEY
         sync: false
