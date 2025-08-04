@@ -1,11 +1,12 @@
 services:
-  - type: worker
+  - type: web
     name: neo2-agent
     runtime: python
     repo: https://github.com/saranya-host/neo2-cloud
     branch: master
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python agent.py"
+    plan: free
     envVars:
       - key: GOOGLE_API_KEY
         sync: false
