@@ -6,7 +6,7 @@ services:
     branch: main
     plan: free  # ✅ FREE TIER
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "python agent.py"
+    startCommand: "python agent.py dev"
     envVars:
       - key: GOOGLE_API_KEY
         sync: false
@@ -16,4 +16,5 @@ services:
         sync: false
       - key: LIVEKIT_URL
         sync: false
+
 
