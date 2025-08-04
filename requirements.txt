@@ -3,6 +3,7 @@ python-dotenv
 google-generativeai
 livekit-agents>=1.2.2
 python-dotenv
-livekit-agents[google,silero,turn-detector]~=1.0
+livekit
 livekit-plugins-noise-cancellation~=0.2
+
 
